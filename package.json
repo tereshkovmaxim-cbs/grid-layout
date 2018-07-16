@@ -1,0 +1,24 @@
+{
+  "name": "grid-layout",
+  "version": "1.0.0",
+  "description": "grid-layout practice",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tereshkovmaxim-cbs/grid-layout.git"
+  },
+  "author": "Maskym Tereshkov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tereshkovmaxim-cbs/grid-layout/issues"
+  },
+  "homepage": "https://github.com/tereshkovmaxim-cbs/grid-layout#readme",
+  "devDependencies": {
+    "browser-sync": "^2.24.5",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1"
+  }
+}
