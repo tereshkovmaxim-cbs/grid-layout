@@ -1,0 +1,62 @@
+$size-root: 10px;
+$size-height: 100;
+$size-width: 100;
+$font-family-main: Oswald;
+$font-family-secondary: sans-serif;
+$color-white: #fff;
+$color-dark: #333;
+$color-orange: #f09b00;
+$color-blue: #4d4dad;
+$color-green: #285828;
+$position: center;
+
+html{
+  font-size: $size-root;
+  font-family: $font-family-main, $font-family-secondary;
+}
+
+body, h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.grid {
+  display: grid;
+}
+
+header.grid{
+  height: $size-height + vh;
+  background-image: url(/../img/header.jpg);
+  background-size: cover;
+  background-position: $position;
+  position: relative;
+  align-content: $position;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: lighten($color-dark, 20);
+    opacity: 0.7;
+  }
+
+  .header-container {
+    text-align: $position;
+    color: lighten($color-dark, 100);
+    z-index: 1;
+    padding: 60px 20px;
+
+    h1 {
+      font-size: 6rem;
+      color: $color-white;
+      line-height: 1.5;
+      text-transform: uppercase;
+      margin: $size-root*2;
+    }
+  }
+}
+
+@import "buttons";

@@ -1,0 +1,46 @@
+@function boxShadowLight($color, $p){
+  @return 0px 0px 8px lighten($color, $p);
+}
+@function boxShadowDark($color, $p){
+  @return 0px 0px 8px darken($color, $p);
+}
+.button {
+  display: inline-block;
+  font-size: 2rem;
+  text-decoration: none;
+  border: none;
+  color: lighten($color-dark, 100);
+  padding: $size-root*1.5 $size-root*5;
+  letter-spacing: 1.5;
+  border-radius: $size-root/2;
+  width: $size-root*13;
+  text-transform: uppercase;
+  font-family: $font-family-secondary;
+  margin: $size-root;
+  transition: all 0.7s ease;
+
+  &-html{
+    background-color:$color-orange;
+    box-shadow: boxShadowDark($color-orange, 20);
+    &:hover{
+      background-color: darken($color-orange, 3);
+      box-shadow: boxShadowLight($color-orange, 10);
+    }
+  }
+  &-css{
+    background-color: $color-blue;
+    box-shadow: boxShadowDark($color-blue, 20);
+    &:hover{
+      background-color: darken($color-blue, 3);
+      box-shadow: boxShadowLight($color-blue, 20);
+    }
+  }
+  &-js{
+    background-color: $color-green;
+    box-shadow: boxShadowDark($color-green, 20);
+    &:hover{
+      background-color: darken($color-green, 3);
+      box-shadow: boxShadowLight($color-green, 20);
+    }
+  }
+}

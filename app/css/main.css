@@ -1,0 +1,71 @@
+html {
+  font-size: 10px;
+  font-family: Oswald, sans-serif; }
+
+body, h1 {
+  margin: 0;
+  padding: 0; }
+
+.grid {
+  display: grid; }
+
+header.grid {
+  height: 100vh;
+  background-image: url(/../img/header.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  align-content: center; }
+  header.grid::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #666666;
+    opacity: 0.7; }
+  header.grid .header-container {
+    text-align: center;
+    color: white;
+    z-index: 1;
+    padding: 60px 20px; }
+    header.grid .header-container h1 {
+      font-size: 6rem;
+      color: #fff;
+      line-height: 1.5;
+      text-transform: uppercase;
+      margin: 20px; }
+
+.button {
+  display: inline-block;
+  font-size: 2rem;
+  text-decoration: none;
+  border: none;
+  color: white;
+  padding: 15px 50px;
+  letter-spacing: 1.5;
+  border-radius: 5px;
+  width: 130px;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  margin: 10px;
+  transition: all 0.7s ease; }
+  .button-html {
+    background-color: #f09b00;
+    box-shadow: 0px 0px 8px #8a5900; }
+    .button-html:hover {
+      background-color: #e19100;
+      box-shadow: 0px 0px 8px #ffb124; }
+  .button-css {
+    background-color: #4d4dad;
+    box-shadow: 0px 0px 8px #2e2e66; }
+    .button-css:hover {
+      background-color: #4848a2;
+      box-shadow: 0px 0px 8px #9292ce; }
+  .button-js {
+    background-color: #285828;
+    box-shadow: 0px 0px 8px #081208; }
+    .button-js:hover {
+      background-color: #234d23;
+      box-shadow: 0px 0px 8px #489e48; }
