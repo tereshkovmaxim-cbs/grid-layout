@@ -15,7 +15,7 @@ html{
   font-family: $font-family-main, $font-family-secondary;
 }
 
-body, h1 {
+body, h1, h2 {
   margin: 0;
   padding: 0;
 }
@@ -60,3 +60,10 @@ header.grid{
 }
 
 @import "buttons";
+@import "section-about";
+
+.container {
+  width: $size-width*12 + px;
+  margin: auto;
+  padding: 0 $size-root*2;
+}

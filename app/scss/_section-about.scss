@@ -1,0 +1,34 @@
+.section-about{
+  background: lighten($color-dark, 77);
+  .container{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.about-left {
+  font-size: 18px;
+  border-right: 1px solid black;
+  padding: {
+    top: $size-root*6;
+    right: $size-root*6;
+    bottom: $size-root;
+    left: $size-root*6;
+  }
+
+  h2 {
+    font-size: 2.7rem;
+    padding-bottom: $size-root*3;
+  }
+}
+.about-right {
+  padding: {
+    top: $size-root*5;
+    right: $size-root*3;
+    bottom: $size-root;
+    left: $size-root*4;
+  }
+  .image {
+    display: block;
+    width: $size-width + %;
+    height: auto;
+  }
+}
